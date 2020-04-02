@@ -3838,7 +3838,7 @@ public class TapTradeWrapper {
   }
 
   public static ITapTradeAPI CreateITapTradeAPI(TapAPIApplicationInfo appInfo, ref int iResult) {
-    global::System.IntPtr cPtr = TapTradeWrapperPINVOKE.CreateITapTradeAPI(TapAPIApplicationInfo.getCPtr(appInfo), ref iResult);
+    global::System.IntPtr cPtr = TapTradeWrapperPINVOKE.CreateITapTradeAPI(TapAPIApplicationInfo.getCPtr(appInfo), SWIGTYPE_p_int.getCPtr(iResult));
     ITapTradeAPI ret = (cPtr == global::System.IntPtr.Zero) ? null : new ITapTradeAPI(cPtr, false);
     if (TapTradeWrapperPINVOKE.SWIGPendingException.Pending) throw TapTradeWrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;

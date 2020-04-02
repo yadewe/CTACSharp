@@ -7786,142 +7786,142 @@ class TapTradeCppWrapperPINVOKE {
   public static extern int ITapTradeAPI_Login(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_RequestVertificateCode")]
-  public static extern int ITapTradeAPI_RequestVertificateCode(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, string jarg3);
+  public static extern int ITapTradeAPI_RequestVertificateCode(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, string jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_SetVertificateCode")]
-  public static extern int ITapTradeAPI_SetVertificateCode(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_SetVertificateCode(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_Disconnect")]
   public static extern int ITapTradeAPI_Disconnect(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_ChangePassword")]
-  public static extern int ITapTradeAPI_ChangePassword(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_ChangePassword(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_AuthPassword")]
-  public static extern int ITapTradeAPI_AuthPassword(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_AuthPassword(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_HaveCertainRight")]
   public static extern int ITapTradeAPI_HaveCertainRight(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryTradingDate")]
-  public static extern int ITapTradeAPI_QryTradingDate(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2);
+  public static extern int ITapTradeAPI_QryTradingDate(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_SetReservedInfo")]
-  public static extern int ITapTradeAPI_SetReservedInfo(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, string jarg3);
+  public static extern int ITapTradeAPI_SetReservedInfo(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, string jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryAccount")]
-  public static extern int ITapTradeAPI_QryAccount(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryAccount(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryFund")]
-  public static extern int ITapTradeAPI_QryFund(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryFund(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryExchange")]
-  public static extern int ITapTradeAPI_QryExchange(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2);
+  public static extern int ITapTradeAPI_QryExchange(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryCommodity")]
-  public static extern int ITapTradeAPI_QryCommodity(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2);
+  public static extern int ITapTradeAPI_QryCommodity(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryContract")]
-  public static extern int ITapTradeAPI_QryContract(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryContract(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_InsertOrder")]
-  public static extern int ITapTradeAPI_InsertOrder(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+  public static extern int ITapTradeAPI_InsertOrder(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, out string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_CancelOrder")]
-  public static extern int ITapTradeAPI_CancelOrder(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_CancelOrder(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_AmendOrder")]
-  public static extern int ITapTradeAPI_AmendOrder(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_AmendOrder(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_ActivateOrder")]
-  public static extern int ITapTradeAPI_ActivateOrder(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_ActivateOrder(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryOrder")]
-  public static extern int ITapTradeAPI_QryOrder(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryOrder(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryOrderProcess")]
-  public static extern int ITapTradeAPI_QryOrderProcess(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryOrderProcess(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryFill")]
-  public static extern int ITapTradeAPI_QryFill(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryFill(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryPosition")]
-  public static extern int ITapTradeAPI_QryPosition(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryPosition(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryPositionSummary")]
-  public static extern int ITapTradeAPI_QryPositionSummary(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryPositionSummary(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryCurrency")]
-  public static extern int ITapTradeAPI_QryCurrency(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2);
+  public static extern int ITapTradeAPI_QryCurrency(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryAccountCashAdjust")]
-  public static extern int ITapTradeAPI_QryAccountCashAdjust(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryAccountCashAdjust(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryTradeMessage")]
-  public static extern int ITapTradeAPI_QryTradeMessage(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryTradeMessage(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryBill")]
-  public static extern int ITapTradeAPI_QryBill(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryBill(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryHisOrder")]
-  public static extern int ITapTradeAPI_QryHisOrder(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryHisOrder(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryHisOrderProcess")]
-  public static extern int ITapTradeAPI_QryHisOrderProcess(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryHisOrderProcess(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryHisMatch")]
-  public static extern int ITapTradeAPI_QryHisMatch(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryHisMatch(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryHisPosition")]
-  public static extern int ITapTradeAPI_QryHisPosition(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryHisPosition(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryHisDelivery")]
-  public static extern int ITapTradeAPI_QryHisDelivery(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryHisDelivery(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryAccountFeeRent")]
-  public static extern int ITapTradeAPI_QryAccountFeeRent(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryAccountFeeRent(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryAccountMarginRent")]
-  public static extern int ITapTradeAPI_QryAccountMarginRent(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryAccountMarginRent(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_InsertHKMarketOrder")]
-  public static extern int ITapTradeAPI_InsertHKMarketOrder(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5);
+  public static extern int ITapTradeAPI_InsertHKMarketOrder(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, out string jarg3, out string jarg4, global::System.Runtime.InteropServices.HandleRef jarg5);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_CancelHKMarketOrder")]
-  public static extern int ITapTradeAPI_CancelHKMarketOrder(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_CancelHKMarketOrder(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_OrderLocalRemove")]
-  public static extern int ITapTradeAPI_OrderLocalRemove(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_OrderLocalRemove(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_OrderLocalInput")]
-  public static extern int ITapTradeAPI_OrderLocalInput(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_OrderLocalInput(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_OrderLocalModify")]
-  public static extern int ITapTradeAPI_OrderLocalModify(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_OrderLocalModify(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_OrderLocalTransfer")]
-  public static extern int ITapTradeAPI_OrderLocalTransfer(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_OrderLocalTransfer(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_FillLocalInput")]
-  public static extern int ITapTradeAPI_FillLocalInput(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_FillLocalInput(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_FillLocalRemove")]
-  public static extern int ITapTradeAPI_FillLocalRemove(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_FillLocalRemove(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QrySpotLock")]
-  public static extern int ITapTradeAPI_QrySpotLock(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QrySpotLock(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_SubmitUserLoginInfo")]
-  public static extern int ITapTradeAPI_SubmitUserLoginInfo(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_SubmitUserLoginInfo(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_InsertSpecialOrder")]
-  public static extern int ITapTradeAPI_InsertSpecialOrder(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+  public static extern int ITapTradeAPI_InsertSpecialOrder(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, out string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QrySpecialOrder")]
-  public static extern int ITapTradeAPI_QrySpecialOrder(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QrySpecialOrder(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPI_QryCombinePosition")]
-  public static extern int ITapTradeAPI_QryCombinePosition(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern int ITapTradeAPI_QryCombinePosition(global::System.Runtime.InteropServices.HandleRef jarg1, out uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_new_ITapTradeAPI")]
   public static extern global::System.IntPtr new_ITapTradeAPI();
@@ -7933,7 +7933,7 @@ class TapTradeCppWrapperPINVOKE {
   public static extern void ITapTradeAPI_director_connect(global::System.Runtime.InteropServices.HandleRef jarg1, ITapTradeAPI.SwigDelegateITapTradeAPI_0 delegate0, ITapTradeAPI.SwigDelegateITapTradeAPI_1 delegate1, ITapTradeAPI.SwigDelegateITapTradeAPI_2 delegate2, ITapTradeAPI.SwigDelegateITapTradeAPI_3 delegate3, ITapTradeAPI.SwigDelegateITapTradeAPI_4 delegate4, ITapTradeAPI.SwigDelegateITapTradeAPI_5 delegate5, ITapTradeAPI.SwigDelegateITapTradeAPI_6 delegate6, ITapTradeAPI.SwigDelegateITapTradeAPI_7 delegate7, ITapTradeAPI.SwigDelegateITapTradeAPI_8 delegate8, ITapTradeAPI.SwigDelegateITapTradeAPI_9 delegate9, ITapTradeAPI.SwigDelegateITapTradeAPI_10 delegate10, ITapTradeAPI.SwigDelegateITapTradeAPI_11 delegate11, ITapTradeAPI.SwigDelegateITapTradeAPI_12 delegate12, ITapTradeAPI.SwigDelegateITapTradeAPI_13 delegate13, ITapTradeAPI.SwigDelegateITapTradeAPI_14 delegate14, ITapTradeAPI.SwigDelegateITapTradeAPI_15 delegate15, ITapTradeAPI.SwigDelegateITapTradeAPI_16 delegate16, ITapTradeAPI.SwigDelegateITapTradeAPI_17 delegate17, ITapTradeAPI.SwigDelegateITapTradeAPI_18 delegate18, ITapTradeAPI.SwigDelegateITapTradeAPI_19 delegate19, ITapTradeAPI.SwigDelegateITapTradeAPI_20 delegate20, ITapTradeAPI.SwigDelegateITapTradeAPI_21 delegate21, ITapTradeAPI.SwigDelegateITapTradeAPI_22 delegate22, ITapTradeAPI.SwigDelegateITapTradeAPI_23 delegate23, ITapTradeAPI.SwigDelegateITapTradeAPI_24 delegate24, ITapTradeAPI.SwigDelegateITapTradeAPI_25 delegate25, ITapTradeAPI.SwigDelegateITapTradeAPI_26 delegate26, ITapTradeAPI.SwigDelegateITapTradeAPI_27 delegate27, ITapTradeAPI.SwigDelegateITapTradeAPI_28 delegate28, ITapTradeAPI.SwigDelegateITapTradeAPI_29 delegate29, ITapTradeAPI.SwigDelegateITapTradeAPI_30 delegate30, ITapTradeAPI.SwigDelegateITapTradeAPI_31 delegate31, ITapTradeAPI.SwigDelegateITapTradeAPI_32 delegate32, ITapTradeAPI.SwigDelegateITapTradeAPI_33 delegate33, ITapTradeAPI.SwigDelegateITapTradeAPI_34 delegate34, ITapTradeAPI.SwigDelegateITapTradeAPI_35 delegate35, ITapTradeAPI.SwigDelegateITapTradeAPI_36 delegate36, ITapTradeAPI.SwigDelegateITapTradeAPI_37 delegate37, ITapTradeAPI.SwigDelegateITapTradeAPI_38 delegate38, ITapTradeAPI.SwigDelegateITapTradeAPI_39 delegate39, ITapTradeAPI.SwigDelegateITapTradeAPI_40 delegate40, ITapTradeAPI.SwigDelegateITapTradeAPI_41 delegate41, ITapTradeAPI.SwigDelegateITapTradeAPI_42 delegate42, ITapTradeAPI.SwigDelegateITapTradeAPI_43 delegate43, ITapTradeAPI.SwigDelegateITapTradeAPI_44 delegate44, ITapTradeAPI.SwigDelegateITapTradeAPI_45 delegate45, ITapTradeAPI.SwigDelegateITapTradeAPI_46 delegate46, ITapTradeAPI.SwigDelegateITapTradeAPI_47 delegate47, ITapTradeAPI.SwigDelegateITapTradeAPI_48 delegate48, ITapTradeAPI.SwigDelegateITapTradeAPI_49 delegate49);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_CreateITapTradeAPI")]
-  public static extern global::System.IntPtr CreateITapTradeAPI(global::System.Runtime.InteropServices.HandleRef jarg1, ref int jarg2);
+  public static extern global::System.IntPtr CreateITapTradeAPI(global::System.Runtime.InteropServices.HandleRef jarg1, out int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_FreeITapTradeAPI")]
   public static extern void FreeITapTradeAPI(global::System.Runtime.InteropServices.HandleRef jarg1);

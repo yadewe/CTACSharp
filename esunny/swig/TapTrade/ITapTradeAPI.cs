@@ -63,12 +63,12 @@ public class ITapTradeAPI : global::System.IDisposable {
     return ret;
   }
 
-  public virtual int RequestVertificateCode(ref uint sessionID, string ContactInfo) {
+  public virtual int RequestVertificateCode(out uint sessionID, string ContactInfo) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_RequestVertificateCode(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), ContactInfo);
     return ret;
   }
 
-  public virtual int SetVertificateCode(ref uint sessionID, TapAPISecondCertificationReq req) {
+  public virtual int SetVertificateCode(out uint sessionID, TapAPISecondCertificationReq req) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_SetVertificateCode(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPISecondCertificationReq.getCPtr(req));
     return ret;
   }
@@ -78,12 +78,12 @@ public class ITapTradeAPI : global::System.IDisposable {
     return ret;
   }
 
-  public virtual int ChangePassword(ref uint sessionID, TapAPIChangePasswordReq req) {
+  public virtual int ChangePassword(out uint sessionID, TapAPIChangePasswordReq req) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_ChangePassword(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIChangePasswordReq.getCPtr(req));
     return ret;
   }
 
-  public virtual int AuthPassword(ref uint sessionID, TapAPIAuthPasswordReq req) {
+  public virtual int AuthPassword(out uint sessionID, TapAPIAuthPasswordReq req) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_AuthPassword(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIAuthPasswordReq.getCPtr(req));
     return ret;
   }
@@ -93,202 +93,202 @@ public class ITapTradeAPI : global::System.IDisposable {
     return ret;
   }
 
-  public virtual int QryTradingDate(ref uint sessionID) {
+  public virtual int QryTradingDate(out uint sessionID) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryTradingDate(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID));
     return ret;
   }
 
-  public virtual int SetReservedInfo(ref uint sessionID, string info) {
+  public virtual int SetReservedInfo(out uint sessionID, string info) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_SetReservedInfo(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), info);
     return ret;
   }
 
-  public virtual int QryAccount(ref uint sessionID, TapAPIAccQryReq qryReq) {
+  public virtual int QryAccount(out uint sessionID, TapAPIAccQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryAccount(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIAccQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryFund(ref uint sessionID, TapAPIFundReq qryReq) {
+  public virtual int QryFund(out uint sessionID, TapAPIFundReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryFund(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIFundReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryExchange(ref uint sessionID) {
+  public virtual int QryExchange(out uint sessionID) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryExchange(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID));
     return ret;
   }
 
-  public virtual int QryCommodity(ref uint sessionID) {
+  public virtual int QryCommodity(out uint sessionID) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryCommodity(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID));
     return ret;
   }
 
-  public virtual int QryContract(ref uint sessionID, TapAPICommodity qryReq) {
+  public virtual int QryContract(out uint sessionID, TapAPICommodity qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryContract(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPICommodity.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int InsertOrder(ref uint sessionID, SWIGTYPE_p_a_51__char ClientOrderNo, TapAPINewOrder order) {
+  public virtual int InsertOrder(out uint sessionID, out string ClientOrderNo, TapAPINewOrder order) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_InsertOrder(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), SWIGTYPE_p_a_51__char.getCPtr(ClientOrderNo), TapAPINewOrder.getCPtr(order));
     return ret;
   }
 
-  public virtual int CancelOrder(ref uint sessionID, TapAPIOrderCancelReq order) {
+  public virtual int CancelOrder(out uint sessionID, TapAPIOrderCancelReq order) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_CancelOrder(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIOrderCancelReq.getCPtr(order));
     return ret;
   }
 
-  public virtual int AmendOrder(ref uint sessionID, TapAPIAmendOrder order) {
+  public virtual int AmendOrder(out uint sessionID, TapAPIAmendOrder order) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_AmendOrder(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIAmendOrder.getCPtr(order));
     return ret;
   }
 
-  public virtual int ActivateOrder(ref uint sessionID, TapAPIOrderCancelReq order) {
+  public virtual int ActivateOrder(out uint sessionID, TapAPIOrderCancelReq order) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_ActivateOrder(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIOrderCancelReq.getCPtr(order));
     return ret;
   }
 
-  public virtual int QryOrder(ref uint sessionID, TapAPIOrderQryReq qryReq) {
+  public virtual int QryOrder(out uint sessionID, TapAPIOrderQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryOrder(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIOrderQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryOrderProcess(ref uint sessionID, TapAPIOrderProcessQryReq qryReq) {
+  public virtual int QryOrderProcess(out uint sessionID, TapAPIOrderProcessQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryOrderProcess(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIOrderProcessQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryFill(ref uint sessionID, TapAPIFillQryReq qryReq) {
+  public virtual int QryFill(out uint sessionID, TapAPIFillQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryFill(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIFillQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryPosition(ref uint sessionID, TapAPIPositionQryReq qryReq) {
+  public virtual int QryPosition(out uint sessionID, TapAPIPositionQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryPosition(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIPositionQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryPositionSummary(ref uint sessionID, TapAPIPositionQryReq qryReq) {
+  public virtual int QryPositionSummary(out uint sessionID, TapAPIPositionQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryPositionSummary(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIPositionQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryCurrency(ref uint sessionID) {
+  public virtual int QryCurrency(out uint sessionID) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryCurrency(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID));
     return ret;
   }
 
-  public virtual int QryAccountCashAdjust(ref uint sessionID, TapAPIAccountCashAdjustQryReq qryReq) {
+  public virtual int QryAccountCashAdjust(out uint sessionID, TapAPIAccountCashAdjustQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryAccountCashAdjust(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIAccountCashAdjustQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryTradeMessage(ref uint sessionID, TapAPITradeMessageReq qryReq) {
+  public virtual int QryTradeMessage(out uint sessionID, TapAPITradeMessageReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryTradeMessage(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPITradeMessageReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryBill(ref uint sessionID, TapAPIBillQryReq qryReq) {
+  public virtual int QryBill(out uint sessionID, TapAPIBillQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryBill(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIBillQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryHisOrder(ref uint sessionID, TapAPIHisOrderQryReq qryReq) {
+  public virtual int QryHisOrder(out uint sessionID, TapAPIHisOrderQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryHisOrder(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIHisOrderQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryHisOrderProcess(ref uint sessionID, TapAPIHisOrderProcessQryReq qryReq) {
+  public virtual int QryHisOrderProcess(out uint sessionID, TapAPIHisOrderProcessQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryHisOrderProcess(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIHisOrderProcessQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryHisMatch(ref uint sessionID, TapAPIHisMatchQryReq qryReq) {
+  public virtual int QryHisMatch(out uint sessionID, TapAPIHisMatchQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryHisMatch(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIHisMatchQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryHisPosition(ref uint sessionID, TapAPIHisPositionQryReq qryReq) {
+  public virtual int QryHisPosition(out uint sessionID, TapAPIHisPositionQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryHisPosition(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIHisPositionQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryHisDelivery(ref uint sessionID, TapAPIHisDeliveryQryReq qryReq) {
+  public virtual int QryHisDelivery(out uint sessionID, TapAPIHisDeliveryQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryHisDelivery(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIHisDeliveryQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryAccountFeeRent(ref uint sessionID, TapAPIAccountFeeRentQryReq qryReq) {
+  public virtual int QryAccountFeeRent(out uint sessionID, TapAPIAccountFeeRentQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryAccountFeeRent(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIAccountFeeRentQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryAccountMarginRent(ref uint sessionID, TapAPIAccountMarginRentQryReq qryReq) {
+  public virtual int QryAccountMarginRent(out uint sessionID, TapAPIAccountMarginRentQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryAccountMarginRent(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIAccountMarginRentQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int InsertHKMarketOrder(ref uint sessionID, SWIGTYPE_p_a_51__char ClientBuyOrderNo, SWIGTYPE_p_a_51__char ClientSellOrderNo, TapAPIOrderMarketInsertReq order) {
+  public virtual int InsertHKMarketOrder(out uint sessionID, out string ClientBuyOrderNo, out string ClientSellOrderNo, TapAPIOrderMarketInsertReq order) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_InsertHKMarketOrder(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), SWIGTYPE_p_a_51__char.getCPtr(ClientBuyOrderNo), SWIGTYPE_p_a_51__char.getCPtr(ClientSellOrderNo), TapAPIOrderMarketInsertReq.getCPtr(order));
     return ret;
   }
 
-  public virtual int CancelHKMarketOrder(ref uint sessionID, TapAPIOrderMarketDeleteReq order) {
+  public virtual int CancelHKMarketOrder(out uint sessionID, TapAPIOrderMarketDeleteReq order) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_CancelHKMarketOrder(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIOrderMarketDeleteReq.getCPtr(order));
     return ret;
   }
 
-  public virtual int OrderLocalRemove(ref uint sessionID, TapAPIOrderLocalRemoveReq order) {
+  public virtual int OrderLocalRemove(out uint sessionID, TapAPIOrderLocalRemoveReq order) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_OrderLocalRemove(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIOrderLocalRemoveReq.getCPtr(order));
     return ret;
   }
 
-  public virtual int OrderLocalInput(ref uint sessionID, TapAPIOrderLocalInputReq order) {
+  public virtual int OrderLocalInput(out uint sessionID, TapAPIOrderLocalInputReq order) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_OrderLocalInput(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIOrderLocalInputReq.getCPtr(order));
     return ret;
   }
 
-  public virtual int OrderLocalModify(ref uint sessionID, TapAPIOrderLocalModifyReq order) {
+  public virtual int OrderLocalModify(out uint sessionID, TapAPIOrderLocalModifyReq order) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_OrderLocalModify(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIOrderLocalModifyReq.getCPtr(order));
     return ret;
   }
 
-  public virtual int OrderLocalTransfer(ref uint sessionID, TapAPIOrderLocalTransferReq order) {
+  public virtual int OrderLocalTransfer(out uint sessionID, TapAPIOrderLocalTransferReq order) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_OrderLocalTransfer(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIOrderLocalTransferReq.getCPtr(order));
     return ret;
   }
 
-  public virtual int FillLocalInput(ref uint sessionID, TapAPIFillLocalInputReq fill) {
+  public virtual int FillLocalInput(out uint sessionID, TapAPIFillLocalInputReq fill) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_FillLocalInput(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIFillLocalInputReq.getCPtr(fill));
     return ret;
   }
 
-  public virtual int FillLocalRemove(ref uint sessionID, TapAPIFillLocalRemoveReq fill) {
+  public virtual int FillLocalRemove(out uint sessionID, TapAPIFillLocalRemoveReq fill) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_FillLocalRemove(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPIFillLocalRemoveReq.getCPtr(fill));
     return ret;
   }
 
-  public virtual int QrySpotLock(ref uint sessionID, TapAPISpotLockQryReq qryReq) {
+  public virtual int QrySpotLock(out uint sessionID, TapAPISpotLockQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QrySpotLock(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPISpotLockQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int SubmitUserLoginInfo(ref uint sessionID, TapAPISubmitUserLoginInfo qryReq) {
+  public virtual int SubmitUserLoginInfo(out uint sessionID, TapAPISubmitUserLoginInfo qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_SubmitUserLoginInfo(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPISubmitUserLoginInfo.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int InsertSpecialOrder(ref uint sessionID, SWIGTYPE_p_a_51__char clientorderno, TapAPISpecialOrderInsertReq order) {
+  public virtual int InsertSpecialOrder(out uint sessionID, out string clientorderno, TapAPISpecialOrderInsertReq order) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_InsertSpecialOrder(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), SWIGTYPE_p_a_51__char.getCPtr(clientorderno), TapAPISpecialOrderInsertReq.getCPtr(order));
     return ret;
   }
 
-  public virtual int QrySpecialOrder(ref uint sessionID, TapAPISpecialOrderQryReq qryReq) {
+  public virtual int QrySpecialOrder(out uint sessionID, TapAPISpecialOrderQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QrySpecialOrder(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPISpecialOrderQryReq.getCPtr(qryReq));
     return ret;
   }
 
-  public virtual int QryCombinePosition(ref uint sessionID, TapAPICombinePositionQryReq qryReq) {
+  public virtual int QryCombinePosition(out uint sessionID, TapAPICombinePositionQryReq qryReq) {
     int ret = TapTradeCppWrapperPINVOKE.ITapTradeAPI_QryCombinePosition(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(sessionID), TapAPICombinePositionQryReq.getCPtr(qryReq));
     return ret;
   }
@@ -423,11 +423,11 @@ public class ITapTradeAPI : global::System.IDisposable {
     return Login((loginAuth == global::System.IntPtr.Zero) ? null : new TapAPITradeLoginAuth(loginAuth, false));
   }
 
-  private int SwigDirectorMethodRequestVertificateCode(ref uint sessionID, string ContactInfo) {
+  private int SwigDirectorMethodRequestVertificateCode(out uint sessionID, string ContactInfo) {
     return RequestVertificateCode((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), ContactInfo);
   }
 
-  private int SwigDirectorMethodSetVertificateCode(ref uint sessionID, global::System.IntPtr req) {
+  private int SwigDirectorMethodSetVertificateCode(out uint sessionID, global::System.IntPtr req) {
     return SetVertificateCode((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (req == global::System.IntPtr.Zero) ? null : new TapAPISecondCertificationReq(req, false));
   }
 
@@ -435,11 +435,11 @@ public class ITapTradeAPI : global::System.IDisposable {
     return Disconnect();
   }
 
-  private int SwigDirectorMethodChangePassword(ref uint sessionID, global::System.IntPtr req) {
+  private int SwigDirectorMethodChangePassword(out uint sessionID, global::System.IntPtr req) {
     return ChangePassword((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (req == global::System.IntPtr.Zero) ? null : new TapAPIChangePasswordReq(req, false));
   }
 
-  private int SwigDirectorMethodAuthPassword(ref uint sessionID, global::System.IntPtr req) {
+  private int SwigDirectorMethodAuthPassword(out uint sessionID, global::System.IntPtr req) {
     return AuthPassword((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (req == global::System.IntPtr.Zero) ? null : new TapAPIAuthPasswordReq(req, false));
   }
 
@@ -447,163 +447,163 @@ public class ITapTradeAPI : global::System.IDisposable {
     return HaveCertainRight(rightID);
   }
 
-  private int SwigDirectorMethodQryTradingDate(ref uint sessionID) {
+  private int SwigDirectorMethodQryTradingDate(out uint sessionID) {
     return QryTradingDate((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false));
   }
 
-  private int SwigDirectorMethodSetReservedInfo(ref uint sessionID, string info) {
+  private int SwigDirectorMethodSetReservedInfo(out uint sessionID, string info) {
     return SetReservedInfo((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), info);
   }
 
-  private int SwigDirectorMethodQryAccount(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryAccount(out uint sessionID, global::System.IntPtr qryReq) {
     return QryAccount((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIAccQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryFund(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryFund(out uint sessionID, global::System.IntPtr qryReq) {
     return QryFund((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIFundReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryExchange(ref uint sessionID) {
+  private int SwigDirectorMethodQryExchange(out uint sessionID) {
     return QryExchange((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false));
   }
 
-  private int SwigDirectorMethodQryCommodity(ref uint sessionID) {
+  private int SwigDirectorMethodQryCommodity(out uint sessionID) {
     return QryCommodity((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false));
   }
 
-  private int SwigDirectorMethodQryContract(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryContract(out uint sessionID, global::System.IntPtr qryReq) {
     return QryContract((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPICommodity(qryReq, false));
   }
 
-  private int SwigDirectorMethodInsertOrder(ref uint sessionID, global::System.IntPtr ClientOrderNo, global::System.IntPtr order) {
+  private int SwigDirectorMethodInsertOrder(out uint sessionID, out string ClientOrderNo, global::System.IntPtr order) {
     return InsertOrder((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (ClientOrderNo == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_a_51__char(ClientOrderNo, false), (order == global::System.IntPtr.Zero) ? null : new TapAPINewOrder(order, false));
   }
 
-  private int SwigDirectorMethodCancelOrder(ref uint sessionID, global::System.IntPtr order) {
+  private int SwigDirectorMethodCancelOrder(out uint sessionID, global::System.IntPtr order) {
     return CancelOrder((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (order == global::System.IntPtr.Zero) ? null : new TapAPIOrderCancelReq(order, false));
   }
 
-  private int SwigDirectorMethodAmendOrder(ref uint sessionID, global::System.IntPtr order) {
+  private int SwigDirectorMethodAmendOrder(out uint sessionID, global::System.IntPtr order) {
     return AmendOrder((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (order == global::System.IntPtr.Zero) ? null : new TapAPIAmendOrder(order, false));
   }
 
-  private int SwigDirectorMethodActivateOrder(ref uint sessionID, global::System.IntPtr order) {
+  private int SwigDirectorMethodActivateOrder(out uint sessionID, global::System.IntPtr order) {
     return ActivateOrder((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (order == global::System.IntPtr.Zero) ? null : new TapAPIOrderCancelReq(order, false));
   }
 
-  private int SwigDirectorMethodQryOrder(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryOrder(out uint sessionID, global::System.IntPtr qryReq) {
     return QryOrder((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIOrderQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryOrderProcess(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryOrderProcess(out uint sessionID, global::System.IntPtr qryReq) {
     return QryOrderProcess((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIOrderProcessQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryFill(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryFill(out uint sessionID, global::System.IntPtr qryReq) {
     return QryFill((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIFillQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryPosition(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryPosition(out uint sessionID, global::System.IntPtr qryReq) {
     return QryPosition((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIPositionQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryPositionSummary(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryPositionSummary(out uint sessionID, global::System.IntPtr qryReq) {
     return QryPositionSummary((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIPositionQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryCurrency(ref uint sessionID) {
+  private int SwigDirectorMethodQryCurrency(out uint sessionID) {
     return QryCurrency((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false));
   }
 
-  private int SwigDirectorMethodQryAccountCashAdjust(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryAccountCashAdjust(out uint sessionID, global::System.IntPtr qryReq) {
     return QryAccountCashAdjust((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIAccountCashAdjustQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryTradeMessage(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryTradeMessage(out uint sessionID, global::System.IntPtr qryReq) {
     return QryTradeMessage((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPITradeMessageReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryBill(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryBill(out uint sessionID, global::System.IntPtr qryReq) {
     return QryBill((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIBillQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryHisOrder(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryHisOrder(out uint sessionID, global::System.IntPtr qryReq) {
     return QryHisOrder((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIHisOrderQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryHisOrderProcess(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryHisOrderProcess(out uint sessionID, global::System.IntPtr qryReq) {
     return QryHisOrderProcess((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIHisOrderProcessQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryHisMatch(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryHisMatch(out uint sessionID, global::System.IntPtr qryReq) {
     return QryHisMatch((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIHisMatchQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryHisPosition(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryHisPosition(out uint sessionID, global::System.IntPtr qryReq) {
     return QryHisPosition((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIHisPositionQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryHisDelivery(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryHisDelivery(out uint sessionID, global::System.IntPtr qryReq) {
     return QryHisDelivery((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIHisDeliveryQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryAccountFeeRent(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryAccountFeeRent(out uint sessionID, global::System.IntPtr qryReq) {
     return QryAccountFeeRent((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIAccountFeeRentQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryAccountMarginRent(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryAccountMarginRent(out uint sessionID, global::System.IntPtr qryReq) {
     return QryAccountMarginRent((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPIAccountMarginRentQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodInsertHKMarketOrder(ref uint sessionID, global::System.IntPtr ClientBuyOrderNo, global::System.IntPtr ClientSellOrderNo, global::System.IntPtr order) {
+  private int SwigDirectorMethodInsertHKMarketOrder(out uint sessionID, out string ClientBuyOrderNo, out string ClientSellOrderNo, global::System.IntPtr order) {
     return InsertHKMarketOrder((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (ClientBuyOrderNo == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_a_51__char(ClientBuyOrderNo, false), (ClientSellOrderNo == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_a_51__char(ClientSellOrderNo, false), (order == global::System.IntPtr.Zero) ? null : new TapAPIOrderMarketInsertReq(order, false));
   }
 
-  private int SwigDirectorMethodCancelHKMarketOrder(ref uint sessionID, global::System.IntPtr order) {
+  private int SwigDirectorMethodCancelHKMarketOrder(out uint sessionID, global::System.IntPtr order) {
     return CancelHKMarketOrder((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (order == global::System.IntPtr.Zero) ? null : new TapAPIOrderMarketDeleteReq(order, false));
   }
 
-  private int SwigDirectorMethodOrderLocalRemove(ref uint sessionID, global::System.IntPtr order) {
+  private int SwigDirectorMethodOrderLocalRemove(out uint sessionID, global::System.IntPtr order) {
     return OrderLocalRemove((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (order == global::System.IntPtr.Zero) ? null : new TapAPIOrderLocalRemoveReq(order, false));
   }
 
-  private int SwigDirectorMethodOrderLocalInput(ref uint sessionID, global::System.IntPtr order) {
+  private int SwigDirectorMethodOrderLocalInput(out uint sessionID, global::System.IntPtr order) {
     return OrderLocalInput((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (order == global::System.IntPtr.Zero) ? null : new TapAPIOrderLocalInputReq(order, false));
   }
 
-  private int SwigDirectorMethodOrderLocalModify(ref uint sessionID, global::System.IntPtr order) {
+  private int SwigDirectorMethodOrderLocalModify(out uint sessionID, global::System.IntPtr order) {
     return OrderLocalModify((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (order == global::System.IntPtr.Zero) ? null : new TapAPIOrderLocalModifyReq(order, false));
   }
 
-  private int SwigDirectorMethodOrderLocalTransfer(ref uint sessionID, global::System.IntPtr order) {
+  private int SwigDirectorMethodOrderLocalTransfer(out uint sessionID, global::System.IntPtr order) {
     return OrderLocalTransfer((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (order == global::System.IntPtr.Zero) ? null : new TapAPIOrderLocalTransferReq(order, false));
   }
 
-  private int SwigDirectorMethodFillLocalInput(ref uint sessionID, global::System.IntPtr fill) {
+  private int SwigDirectorMethodFillLocalInput(out uint sessionID, global::System.IntPtr fill) {
     return FillLocalInput((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (fill == global::System.IntPtr.Zero) ? null : new TapAPIFillLocalInputReq(fill, false));
   }
 
-  private int SwigDirectorMethodFillLocalRemove(ref uint sessionID, global::System.IntPtr fill) {
+  private int SwigDirectorMethodFillLocalRemove(out uint sessionID, global::System.IntPtr fill) {
     return FillLocalRemove((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (fill == global::System.IntPtr.Zero) ? null : new TapAPIFillLocalRemoveReq(fill, false));
   }
 
-  private int SwigDirectorMethodQrySpotLock(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQrySpotLock(out uint sessionID, global::System.IntPtr qryReq) {
     return QrySpotLock((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPISpotLockQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodSubmitUserLoginInfo(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodSubmitUserLoginInfo(out uint sessionID, global::System.IntPtr qryReq) {
     return SubmitUserLoginInfo((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPISubmitUserLoginInfo(qryReq, false));
   }
 
-  private int SwigDirectorMethodInsertSpecialOrder(ref uint sessionID, global::System.IntPtr clientorderno, global::System.IntPtr order) {
+  private int SwigDirectorMethodInsertSpecialOrder(out uint sessionID, out string clientorderno, global::System.IntPtr order) {
     return InsertSpecialOrder((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (clientorderno == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_a_51__char(clientorderno, false), (order == global::System.IntPtr.Zero) ? null : new TapAPISpecialOrderInsertReq(order, false));
   }
 
-  private int SwigDirectorMethodQrySpecialOrder(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQrySpecialOrder(out uint sessionID, global::System.IntPtr qryReq) {
     return QrySpecialOrder((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPISpecialOrderQryReq(qryReq, false));
   }
 
-  private int SwigDirectorMethodQryCombinePosition(ref uint sessionID, global::System.IntPtr qryReq) {
+  private int SwigDirectorMethodQryCombinePosition(out uint sessionID, global::System.IntPtr qryReq) {
     return QryCombinePosition((sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false), (qryReq == global::System.IntPtr.Zero) ? null : new TapAPICombinePositionQryReq(qryReq, false));
   }
 
@@ -611,52 +611,52 @@ public class ITapTradeAPI : global::System.IDisposable {
   public delegate int SwigDelegateITapTradeAPI_1(string IP, ushort port, bool bSSL);
   public delegate int SwigDelegateITapTradeAPI_2(string IP, ushort port);
   public delegate int SwigDelegateITapTradeAPI_3(global::System.IntPtr loginAuth);
-  public delegate int SwigDelegateITapTradeAPI_4(ref uint sessionID, string ContactInfo);
-  public delegate int SwigDelegateITapTradeAPI_5(ref uint sessionID, global::System.IntPtr req);
+  public delegate int SwigDelegateITapTradeAPI_4(out uint sessionID, string ContactInfo);
+  public delegate int SwigDelegateITapTradeAPI_5(out uint sessionID, global::System.IntPtr req);
   public delegate int SwigDelegateITapTradeAPI_6();
-  public delegate int SwigDelegateITapTradeAPI_7(ref uint sessionID, global::System.IntPtr req);
-  public delegate int SwigDelegateITapTradeAPI_8(ref uint sessionID, global::System.IntPtr req);
+  public delegate int SwigDelegateITapTradeAPI_7(out uint sessionID, global::System.IntPtr req);
+  public delegate int SwigDelegateITapTradeAPI_8(out uint sessionID, global::System.IntPtr req);
   public delegate int SwigDelegateITapTradeAPI_9(int rightID);
-  public delegate int SwigDelegateITapTradeAPI_10(ref uint sessionID);
-  public delegate int SwigDelegateITapTradeAPI_11(ref uint sessionID, string info);
-  public delegate int SwigDelegateITapTradeAPI_12(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_13(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_14(ref uint sessionID);
-  public delegate int SwigDelegateITapTradeAPI_15(ref uint sessionID);
-  public delegate int SwigDelegateITapTradeAPI_16(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_17(ref uint sessionID, global::System.IntPtr ClientOrderNo, global::System.IntPtr order);
-  public delegate int SwigDelegateITapTradeAPI_18(ref uint sessionID, global::System.IntPtr order);
-  public delegate int SwigDelegateITapTradeAPI_19(ref uint sessionID, global::System.IntPtr order);
-  public delegate int SwigDelegateITapTradeAPI_20(ref uint sessionID, global::System.IntPtr order);
-  public delegate int SwigDelegateITapTradeAPI_21(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_22(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_23(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_24(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_25(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_26(ref uint sessionID);
-  public delegate int SwigDelegateITapTradeAPI_27(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_28(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_29(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_30(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_31(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_32(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_33(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_34(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_35(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_36(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_37(ref uint sessionID, global::System.IntPtr ClientBuyOrderNo, global::System.IntPtr ClientSellOrderNo, global::System.IntPtr order);
-  public delegate int SwigDelegateITapTradeAPI_38(ref uint sessionID, global::System.IntPtr order);
-  public delegate int SwigDelegateITapTradeAPI_39(ref uint sessionID, global::System.IntPtr order);
-  public delegate int SwigDelegateITapTradeAPI_40(ref uint sessionID, global::System.IntPtr order);
-  public delegate int SwigDelegateITapTradeAPI_41(ref uint sessionID, global::System.IntPtr order);
-  public delegate int SwigDelegateITapTradeAPI_42(ref uint sessionID, global::System.IntPtr order);
-  public delegate int SwigDelegateITapTradeAPI_43(ref uint sessionID, global::System.IntPtr fill);
-  public delegate int SwigDelegateITapTradeAPI_44(ref uint sessionID, global::System.IntPtr fill);
-  public delegate int SwigDelegateITapTradeAPI_45(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_46(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_47(ref uint sessionID, global::System.IntPtr clientorderno, global::System.IntPtr order);
-  public delegate int SwigDelegateITapTradeAPI_48(ref uint sessionID, global::System.IntPtr qryReq);
-  public delegate int SwigDelegateITapTradeAPI_49(ref uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_10(out uint sessionID);
+  public delegate int SwigDelegateITapTradeAPI_11(out uint sessionID, string info);
+  public delegate int SwigDelegateITapTradeAPI_12(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_13(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_14(out uint sessionID);
+  public delegate int SwigDelegateITapTradeAPI_15(out uint sessionID);
+  public delegate int SwigDelegateITapTradeAPI_16(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_17(out uint sessionID, out string ClientOrderNo, global::System.IntPtr order);
+  public delegate int SwigDelegateITapTradeAPI_18(out uint sessionID, global::System.IntPtr order);
+  public delegate int SwigDelegateITapTradeAPI_19(out uint sessionID, global::System.IntPtr order);
+  public delegate int SwigDelegateITapTradeAPI_20(out uint sessionID, global::System.IntPtr order);
+  public delegate int SwigDelegateITapTradeAPI_21(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_22(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_23(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_24(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_25(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_26(out uint sessionID);
+  public delegate int SwigDelegateITapTradeAPI_27(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_28(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_29(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_30(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_31(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_32(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_33(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_34(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_35(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_36(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_37(out uint sessionID, out string ClientBuyOrderNo, out string ClientSellOrderNo, global::System.IntPtr order);
+  public delegate int SwigDelegateITapTradeAPI_38(out uint sessionID, global::System.IntPtr order);
+  public delegate int SwigDelegateITapTradeAPI_39(out uint sessionID, global::System.IntPtr order);
+  public delegate int SwigDelegateITapTradeAPI_40(out uint sessionID, global::System.IntPtr order);
+  public delegate int SwigDelegateITapTradeAPI_41(out uint sessionID, global::System.IntPtr order);
+  public delegate int SwigDelegateITapTradeAPI_42(out uint sessionID, global::System.IntPtr order);
+  public delegate int SwigDelegateITapTradeAPI_43(out uint sessionID, global::System.IntPtr fill);
+  public delegate int SwigDelegateITapTradeAPI_44(out uint sessionID, global::System.IntPtr fill);
+  public delegate int SwigDelegateITapTradeAPI_45(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_46(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_47(out uint sessionID, out string clientorderno, global::System.IntPtr order);
+  public delegate int SwigDelegateITapTradeAPI_48(out uint sessionID, global::System.IntPtr qryReq);
+  public delegate int SwigDelegateITapTradeAPI_49(out uint sessionID, global::System.IntPtr qryReq);
 
   private SwigDelegateITapTradeAPI_0 swigDelegate0;
   private SwigDelegateITapTradeAPI_1 swigDelegate1;
@@ -726,7 +726,7 @@ public class ITapTradeAPI : global::System.IDisposable {
   private static global::System.Type[] swigMethodTypes14 = new global::System.Type[] { typeof(uint).MakeByRefType() };
   private static global::System.Type[] swigMethodTypes15 = new global::System.Type[] { typeof(uint).MakeByRefType() };
   private static global::System.Type[] swigMethodTypes16 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(TapAPICommodity) };
-  private static global::System.Type[] swigMethodTypes17 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(SWIGTYPE_p_a_51__char), typeof(TapAPINewOrder) };
+  private static global::System.Type[] swigMethodTypes17 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(string).MakeByRefType(), typeof(TapAPINewOrder) };
   private static global::System.Type[] swigMethodTypes18 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(TapAPIOrderCancelReq) };
   private static global::System.Type[] swigMethodTypes19 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(TapAPIAmendOrder) };
   private static global::System.Type[] swigMethodTypes20 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(TapAPIOrderCancelReq) };
@@ -746,7 +746,7 @@ public class ITapTradeAPI : global::System.IDisposable {
   private static global::System.Type[] swigMethodTypes34 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(TapAPIHisDeliveryQryReq) };
   private static global::System.Type[] swigMethodTypes35 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(TapAPIAccountFeeRentQryReq) };
   private static global::System.Type[] swigMethodTypes36 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(TapAPIAccountMarginRentQryReq) };
-  private static global::System.Type[] swigMethodTypes37 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(SWIGTYPE_p_a_51__char), typeof(SWIGTYPE_p_a_51__char), typeof(TapAPIOrderMarketInsertReq) };
+  private static global::System.Type[] swigMethodTypes37 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(string).MakeByRefType(), typeof(string).MakeByRefType(), typeof(TapAPIOrderMarketInsertReq) };
   private static global::System.Type[] swigMethodTypes38 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(TapAPIOrderMarketDeleteReq) };
   private static global::System.Type[] swigMethodTypes39 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(TapAPIOrderLocalRemoveReq) };
   private static global::System.Type[] swigMethodTypes40 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(TapAPIOrderLocalInputReq) };
@@ -756,7 +756,7 @@ public class ITapTradeAPI : global::System.IDisposable {
   private static global::System.Type[] swigMethodTypes44 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(TapAPIFillLocalRemoveReq) };
   private static global::System.Type[] swigMethodTypes45 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(TapAPISpotLockQryReq) };
   private static global::System.Type[] swigMethodTypes46 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(TapAPISubmitUserLoginInfo) };
-  private static global::System.Type[] swigMethodTypes47 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(SWIGTYPE_p_a_51__char), typeof(TapAPISpecialOrderInsertReq) };
+  private static global::System.Type[] swigMethodTypes47 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(string).MakeByRefType(), typeof(TapAPISpecialOrderInsertReq) };
   private static global::System.Type[] swigMethodTypes48 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(TapAPISpecialOrderQryReq) };
   private static global::System.Type[] swigMethodTypes49 = new global::System.Type[] { typeof(uint).MakeByRefType(), typeof(TapAPICombinePositionQryReq) };
 }
