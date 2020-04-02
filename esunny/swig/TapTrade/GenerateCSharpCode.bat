@@ -1,0 +1,1 @@
+swig.exe -c++ -csharp -directors TapTradeCppWrapper.i
