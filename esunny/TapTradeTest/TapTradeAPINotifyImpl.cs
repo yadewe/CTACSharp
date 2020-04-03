@@ -4,6 +4,10 @@ namespace TapTradeTest
 {
     public class TapTradeAPINotifyImpl : ITapTradeAPINotify
     {
+        public override void OnConnect()
+        {
+            Console.WriteLine("OnConnect");
+        }
     }
     public class TapTradeAPINotifyImpl2 : ITapTradeAPINotify
     {
