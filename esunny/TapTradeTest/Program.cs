@@ -39,12 +39,26 @@ namespace TapTradeTest
             var err = api.Login(loginAuth);
             Console.WriteLine("login result " + err);
             int i = 0;
-            //while (!trade.ApiReady)
+            while (!trade.ApiReady)
             {
-                Thread.Sleep(5000);
+                Thread.Sleep(000);
                 Console.WriteLine("api not ready... watit " + i++);
             }
 
+            // TestOrderInsert(api, userName);
+
+            var version = TapTradeCppWrapper.GetITapTradeAPIVersion();
+            Console.WriteLine($"version:{version}");
+            var error = TapTradeCppWrapper.GetITapErrorDescribe(2);
+            Console.WriteLine($"error:{error}");
+            while (true)
+            {
+                Thread.Sleep(100);
+            }
+        }
+
+        private static void TestOrderInsert(ITapTradeAPI api, string userName)
+        {
             var order = new TapAPINewOrder();
             order.AccountNo = userName;
             order.ExchangeNo = "CFFEX";
@@ -78,11 +92,6 @@ namespace TapTradeTest
             string num = "123";
             uint id2 = 0;
             api.InsertOrder(out id2, num, order);
-
-            while (true)
-            {
-                Thread.Sleep(100);
-            }
         }
     }
 }

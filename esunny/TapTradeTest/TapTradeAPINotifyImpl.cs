@@ -11,7 +11,7 @@ namespace TapTradeTest
     }
     public class TapTradeAPINotifyImpl2 : ITapTradeAPINotify
     {
-
+        public bool ApiReady { get; set; }
         public override void OnConnect()
         {
             Console.WriteLine("OnConnect");
@@ -25,6 +25,7 @@ namespace TapTradeTest
 
         public override void OnAPIReady(int errorCode)
         {
+            ApiReady = errorCode == 0;
             Console.WriteLine("OnAPIReady "+ errorCode);
         }
 
