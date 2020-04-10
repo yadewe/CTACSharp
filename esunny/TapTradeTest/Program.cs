@@ -26,22 +26,23 @@ namespace TapTradeTest
                 return;
             }
 
-            var trade = new TapTradeAPINotifyImpl();
+            var trade = new TapTradeAPINotifyImpl2();
             api.SetAPINotify(trade);
 
-            const string userName = "Q2833728468";
-            api.SetHostAddress("123.15.58.21", 6060);
+            const string userName = "Q513677011";
+            api.SetHostAddress("61.163.243.173", 8383);
             var loginAuth = new TapAPITradeLoginAuth();
             loginAuth.UserNo = userName;
-            loginAuth.Password = "967082";
+            loginAuth.Password = "566716";
             loginAuth.ISModifyPassword = 'N';
             //loginAuth.ISDDA = 'N';
             var err = api.Login(loginAuth);
-
-            while (trade==null)
+            Console.WriteLine("login result " + err);
+            int i = 0;
+            //while (!trade.ApiReady)
             {
-                Thread.Sleep(1000);
-                Console.WriteLine("api not ready...");
+                Thread.Sleep(5000);
+                Console.WriteLine("api not ready... watit " + i++);
             }
 
             var order = new TapAPINewOrder();
@@ -74,9 +75,9 @@ namespace TapTradeTest
             //order.HedgeFlag2 = 'N';
             //order.MarketLevel = 0;
             //order.OrderDeleteByDisConnFlag = 'N';
-            string num = "";
+            string num = "123";
             uint id2 = 0;
-            api.InsertOrder(out id2, out num, order);
+            api.InsertOrder(out id2, num, order);
 
             while (true)
             {

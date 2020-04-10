@@ -49,11 +49,11 @@
 %typemap(imtype) ITapTrade::TAPIREAL64 & "ref double"
 %typemap(cstype) ITapTrade::TAPIREAL64 & "out double"
 
-%typemap(imtype) ITapTrade::TAPISTR_50 * "out string"
-%typemap(cstype) ITapTrade::TAPISTR_50 * "out string"
-%typemap(csout) ITapTrade::TAPISTR_50 * "out string"
-%typemap(imtype) ITapTrade::TAPISTR_50 & "out string"
-%typemap(cstype) ITapTrade::TAPISTR_50 & "out string"
+%typemap(imtype) ITapTrade::TAPISTR_50 * "string"
+%typemap(cstype) ITapTrade::TAPISTR_50 * "string"
+%typemap(csout) ITapTrade::TAPISTR_50 * "string"
+%typemap(imtype) ITapTrade::TAPISTR_50 & "string"
+%typemap(cstype) ITapTrade::TAPISTR_50 & "string"
 
 %include "iTapAPICommDef.h"
 %include "iTapAPIError.h"
