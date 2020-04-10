@@ -33,9 +33,9 @@ namespace TapTradeTest
             }
         }
 
-        public override void OnAPIReady()
+        public override void OnAPIReady(int errorCode)
         {
-            Console.WriteLine("OnAPIReady");
+            Console.WriteLine("OnAPIReady"+errorCode);
             _apiReady = true;
         }
 
@@ -71,7 +71,7 @@ namespace TapTradeTest
 
         public override void OnDisconnect(int reasonCode)
         {
-            Console.WriteLine("OnDisconnect");
+            Console.WriteLine("OnDisconnect "+ reasonCode);
         }
 
         public override void OnRspAccountRentInfo(uint sessionID, int errorCode, char isLast, TapAPIAccountRentInfo info)

@@ -404,11 +404,13 @@ void SwigDirector_ITapTradeAPINotify::OnRspLogin(TAPIINT32 errorCode, TapAPITrad
   }
 }
 
-void SwigDirector_ITapTradeAPINotify::OnAPIReady() {
+void SwigDirector_ITapTradeAPINotify::OnAPIReady(TAPIINT32 errorCode) {
+  int jerrorCode  ;
   if (!swig_callbackOnAPIReady) {
     throw Swig::DirectorPureVirtualException("ITapTradeAPINotify::OnAPIReady");
   } else {
-    swig_callbackOnAPIReady();
+    jerrorCode = errorCode;
+    swig_callbackOnAPIReady(jerrorCode);
   }
 }
 
@@ -18621,11 +18623,13 @@ SWIGEXPORT void SWIGSTDCALL CSharp_ITapTradeAPINotify_OnRspLogin(void * jarg1, i
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_ITapTradeAPINotify_OnAPIReady(void * jarg1) {
+SWIGEXPORT void SWIGSTDCALL CSharp_ITapTradeAPINotify_OnAPIReady(void * jarg1, int jarg2) {
   ITapTradeAPINotify *arg1 = (ITapTradeAPINotify *) 0 ;
+  TAPIINT32 arg2 ;
   
   arg1 = (ITapTradeAPINotify *)jarg1; 
-  (arg1)->OnAPIReady();
+  arg2 = (TAPIINT32)jarg2; 
+  (arg1)->OnAPIReady(arg2);
 }
 
 

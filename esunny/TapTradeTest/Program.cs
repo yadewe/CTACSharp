@@ -29,19 +29,20 @@ namespace TapTradeTest
             var trade = new TapTradeAPINotifyImpl();
             api.SetAPINotify(trade);
 
-            const string userName = "Q2833728468";
-            api.SetHostAddress("123.15.58.21", 6060);
+            const string userName = "Q513677011";
+            api.SetHostAddress("61.163.243.173", 8383);
             var loginAuth = new TapAPITradeLoginAuth();
             loginAuth.UserNo = userName;
-            loginAuth.Password = "967082";
+            loginAuth.Password = "566716";
             loginAuth.ISModifyPassword = 'N';
             loginAuth.ISDDA = 'N';
             var err = api.Login(loginAuth);
-
+            Console.WriteLine("login result "+err);
+            int i = 0;
             while (!trade.ApiReady)
             {
-                Thread.Sleep(1000);
-                Console.WriteLine("api not ready...");
+                Thread.Sleep(5000);
+                Console.WriteLine("api not ready... watit " + i++);
             }
 
             var order = new TapAPINewOrder();

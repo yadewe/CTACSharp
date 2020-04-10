@@ -17,7 +17,7 @@ public:
     SwigDirector_ITapTradeAPINotify();
     virtual void TAP_CDECL OnConnect();
     virtual void TAP_CDECL OnRspLogin(TAPIINT32 errorCode, TapAPITradeLoginRspInfo const *loginRspInfo);
-    virtual void TAP_CDECL OnAPIReady();
+    virtual void TAP_CDECL OnAPIReady(TAPIINT32 errorCode);
     virtual void TAP_CDECL OnDisconnect(TAPIINT32 reasonCode);
     virtual void TAP_CDECL OnRspChangePassword(TAPIUINT32 sessionID, TAPIINT32 errorCode);
     virtual void TAP_CDECL OnRspSetReservedInfo(TAPIUINT32 sessionID, TAPIINT32 errorCode, TAPISTR_50 const info);
@@ -48,7 +48,7 @@ public:
 
     typedef void (SWIGSTDCALL* SWIG_Callback0_t)();
     typedef void (SWIGSTDCALL* SWIG_Callback1_t)(int, void *);
-    typedef void (SWIGSTDCALL* SWIG_Callback2_t)();
+    typedef void (SWIGSTDCALL* SWIG_Callback2_t)(int);
     typedef void (SWIGSTDCALL* SWIG_Callback3_t)(int);
     typedef void (SWIGSTDCALL* SWIG_Callback4_t)(unsigned int, int);
     typedef void (SWIGSTDCALL* SWIG_Callback5_t)(unsigned int, int, char *);

@@ -4634,7 +4634,7 @@ class TapTradeCppWrapperPINVOKE {
   public static extern void ITapTradeAPINotify_OnRspLogin(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPINotify_OnAPIReady")]
-  public static extern void ITapTradeAPINotify_OnAPIReady(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern void ITapTradeAPINotify_OnAPIReady(global::System.Runtime.InteropServices.HandleRef jarg1, int errorCode);
 
   [global::System.Runtime.InteropServices.DllImport("TapTradeCppWrapper", EntryPoint="CSharp_ITapTradeAPINotify_OnDisconnect")]
   public static extern void ITapTradeAPINotify_OnDisconnect(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);

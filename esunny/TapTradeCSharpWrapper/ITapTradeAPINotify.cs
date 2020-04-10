@@ -47,8 +47,8 @@ public class ITapTradeAPINotify : global::System.IDisposable {
     TapTradeCppWrapperPINVOKE.ITapTradeAPINotify_OnRspLogin(swigCPtr, errorCode, TapAPITradeLoginRspInfo.getCPtr(loginRspInfo));
   }
 
-  public virtual void OnAPIReady() {
-    TapTradeCppWrapperPINVOKE.ITapTradeAPINotify_OnAPIReady(swigCPtr);
+  public virtual void OnAPIReady(int errorCode) {
+    TapTradeCppWrapperPINVOKE.ITapTradeAPINotify_OnAPIReady(swigCPtr,errorCode);
   }
 
   public virtual void OnDisconnect(int reasonCode) {
@@ -241,8 +241,8 @@ public class ITapTradeAPINotify : global::System.IDisposable {
     OnRspLogin(errorCode, (loginRspInfo == global::System.IntPtr.Zero) ? null : new TapAPITradeLoginRspInfo(loginRspInfo, false));
   }
 
-  private void SwigDirectorOnAPIReady() {
-    OnAPIReady();
+  private void SwigDirectorOnAPIReady(int errorCode) {
+    OnAPIReady(errorCode);
   }
 
   private void SwigDirectorOnDisconnect(int reasonCode) {
@@ -355,7 +355,7 @@ public class ITapTradeAPINotify : global::System.IDisposable {
 
   public delegate void SwigDelegateITapTradeAPINotify_0();
   public delegate void SwigDelegateITapTradeAPINotify_1(int errorCode, global::System.IntPtr loginRspInfo);
-  public delegate void SwigDelegateITapTradeAPINotify_2();
+  public delegate void SwigDelegateITapTradeAPINotify_2(int errorCode);
   public delegate void SwigDelegateITapTradeAPINotify_3(int reasonCode);
   public delegate void SwigDelegateITapTradeAPINotify_4(uint sessionID, int errorCode);
   public delegate void SwigDelegateITapTradeAPINotify_5(uint sessionID, int errorCode, string info);
@@ -417,7 +417,7 @@ public class ITapTradeAPINotify : global::System.IDisposable {
 
   private static global::System.Type[] swigMethodTypes0 = new global::System.Type[] {  };
   private static global::System.Type[] swigMethodTypes1 = new global::System.Type[] { typeof(int), typeof(TapAPITradeLoginRspInfo) };
-  private static global::System.Type[] swigMethodTypes2 = new global::System.Type[] {  };
+  private static global::System.Type[] swigMethodTypes2 = new global::System.Type[] { typeof(int) };
   private static global::System.Type[] swigMethodTypes3 = new global::System.Type[] { typeof(int) };
   private static global::System.Type[] swigMethodTypes4 = new global::System.Type[] { typeof(uint), typeof(int) };
   private static global::System.Type[] swigMethodTypes5 = new global::System.Type[] { typeof(uint), typeof(int), typeof(string) };

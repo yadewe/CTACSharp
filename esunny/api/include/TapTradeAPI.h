@@ -41,7 +41,7 @@ public:
 	* @attention 就绪后才可以进行后续正常操作
 	* @ingroup G_T_Login
 	*/
-	virtual void TAP_CDECL OnAPIReady() = 0;
+	virtual void TAP_CDECL OnAPIReady(TAPIINT32 errorCode) = 0;
 	/**
 	* @brief	API和服务失去连接的回调
 	* @details	在API使用过程中主动或者被动与服务器服务失去连接后都会触发此回调通知用户与服务器的连接已经断开。
