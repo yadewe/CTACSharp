@@ -41,8 +41,8 @@ namespace TapTradeTest
             int i = 0;
             while (!trade.ApiReady)
             {
-                Thread.Sleep(000);
                 Console.WriteLine("api not ready... watit " + i++);
+                Thread.Sleep(1000);
             }
 
             // TestOrderInsert(api, userName);
