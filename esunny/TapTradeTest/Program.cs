@@ -26,7 +26,7 @@ namespace TapTradeTest
                 return;
             }
 
-            var trade = new TapTradeAPINotifyImpl2();
+            var trade = new TapTradeAPINotifyImpl();
             api.SetAPINotify(trade);
 
             const string userName = "Q513677011";
@@ -51,6 +51,21 @@ namespace TapTradeTest
             Console.WriteLine($"version:{version}");
             var error = TapTradeCppWrapper.GetITapErrorDescribe(2);
             Console.WriteLine($"error:{error}");
+
+            uint sessionId = 0;
+            var result = api.QryTradingDate(out sessionId);
+            Console.WriteLine($"QryTradingDate:{result}");
+            result = api.QryExchange(out sessionId);
+            Console.WriteLine($"QryExchange:{result}");
+            result = api.QryCurrency(out sessionId);
+            Console.WriteLine($"QryCurrency:{result}");
+
+            var accInfo = new TapAPIAccQryReq();
+            //exInfo.ExchangeName = "";
+            //exInfo.ExchangeNo = "";
+             result = api.QryAccount(out sessionId, accInfo);
+            Console.WriteLine($"QryCurrency:{result},info:{accInfo}");
+
             while (true)
             {
                 Thread.Sleep(100);
