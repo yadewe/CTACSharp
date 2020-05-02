@@ -55,10 +55,10 @@ namespace TapTradeTest
             uint sessionId = 0;
             var result = api.QryTradingDate(out sessionId);
             Console.WriteLine($"QryTradingDate:{result}");
-            result = api.QryExchange(out sessionId);
-            Console.WriteLine($"QryExchange:{result}");
-            result = api.QryCurrency(out sessionId);
-            Console.WriteLine($"QryCurrency:{result}");
+            //result = api.QryExchange(out sessionId);
+            //Console.WriteLine($"QryExchange:{result}");
+            //result = api.QryCurrency(out sessionId);
+            //Console.WriteLine($"QryCurrency:{result}");
 
             //var accInfo = new TapAPIAccQryReq();
             ////exInfo.ExchangeName = "";
