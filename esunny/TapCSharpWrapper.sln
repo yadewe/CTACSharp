@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TapTradeCSharpWrapper", "Ta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TapTradeTest", "TapTradeTest\TapTradeTest.csproj", "{8C176D74-E82D-4DC6-B02C-44BF376FF780}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwigCodeFormat", "SwigCodeFormat\SwigCodeFormat.csproj", "{A99F6A6C-C0BD-4762-B694-346B04C394E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,8 +95,23 @@ Global
 		{8C176D74-E82D-4DC6-B02C-44BF376FF780}.Release|x64.Build.0 = Release|Any CPU
 		{8C176D74-E82D-4DC6-B02C-44BF376FF780}.Release|x86.ActiveCfg = Release|Any CPU
 		{8C176D74-E82D-4DC6-B02C-44BF376FF780}.Release|x86.Build.0 = Release|Any CPU
+		{A99F6A6C-C0BD-4762-B694-346B04C394E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A99F6A6C-C0BD-4762-B694-346B04C394E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A99F6A6C-C0BD-4762-B694-346B04C394E3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A99F6A6C-C0BD-4762-B694-346B04C394E3}.Debug|x64.Build.0 = Debug|Any CPU
+		{A99F6A6C-C0BD-4762-B694-346B04C394E3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A99F6A6C-C0BD-4762-B694-346B04C394E3}.Debug|x86.Build.0 = Debug|Any CPU
+		{A99F6A6C-C0BD-4762-B694-346B04C394E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A99F6A6C-C0BD-4762-B694-346B04C394E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A99F6A6C-C0BD-4762-B694-346B04C394E3}.Release|x64.ActiveCfg = Release|Any CPU
+		{A99F6A6C-C0BD-4762-B694-346B04C394E3}.Release|x64.Build.0 = Release|Any CPU
+		{A99F6A6C-C0BD-4762-B694-346B04C394E3}.Release|x86.ActiveCfg = Release|Any CPU
+		{A99F6A6C-C0BD-4762-B694-346B04C394E3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09EE854C-CBC3-417D-BF47-95596B926FF7}
 	EndGlobalSection
 EndGlobal
