@@ -63,6 +63,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy /E /Y $(SolutionDir)\x64\Debug\TapTradeCppWrapper.dll .
-xcopy /E /Y $(SolutionDir)\api\lib\win64\iTapTradeAPI_64.dll .</PostBuildEvent>
+xcopy /E /Y $(SolutionDir)\api\lib\win64\iTapTradeAPI_64.dll .
+xcopy /E /Y $(SolutionDir)\x64\Debug\TapTradeCppWrapper.lib .</PostBuildEvent>
   </PropertyGroup>
 </Project>

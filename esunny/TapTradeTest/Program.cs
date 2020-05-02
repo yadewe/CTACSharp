@@ -45,12 +45,12 @@ namespace TapTradeTest
                 Thread.Sleep(1000);
             }
 
-            // TestOrderInsert(api, userName);
+            //TestOrderInsert(api, userName);
 
             var version = TapTradeCppWrapper.GetITapTradeAPIVersion();
             Console.WriteLine($"version:{version}");
             var error = TapTradeCppWrapper.GetITapErrorDescribe(2);
-            Console.WriteLine($"error:{error}");
+            Console.WriteLine($"test get error message 2:{error}");
 
             uint sessionId = 0;
             var result = api.QryTradingDate(out sessionId);
@@ -60,11 +60,11 @@ namespace TapTradeTest
             result = api.QryCurrency(out sessionId);
             Console.WriteLine($"QryCurrency:{result}");
 
-            var accInfo = new TapAPIAccQryReq();
-            //exInfo.ExchangeName = "";
-            //exInfo.ExchangeNo = "";
-             result = api.QryAccount(out sessionId, accInfo);
-            Console.WriteLine($"QryCurrency:{result},info:{accInfo}");
+            //var accInfo = new TapAPIAccQryReq();
+            ////exInfo.ExchangeName = "";
+            ////exInfo.ExchangeNo = "";
+            // result = api.QryAccount(out sessionId, accInfo);
+            //Console.WriteLine($"QryCurrency:{result},info:{accInfo}");
 
             while (true)
             {
@@ -76,11 +76,11 @@ namespace TapTradeTest
         {
             var order = new TapAPINewOrder();
             order.AccountNo = userName;
-            order.ExchangeNo = "CFFEX";
+            order.ExchangeNo = "SHI";
             order.CommodityType = 'F';
             order.CommodityNo = "IF";
-            order.ContractNo = "1803";
-            order.StrikePrice = "";
+            order.ContractNo = "2004";
+            order.StrikePrice = "1";
             order.CallOrPutFlag = 'N';
             order.ContractNo2 = "";
             order.StrikePrice2 = "";
@@ -95,7 +95,7 @@ namespace TapTradeTest
             order.PositionEffect2 = 'N';
             order.InquiryNo = "";
             order.HedgeFlag = 'T';
-            order.OrderPrice = 0.0;
+            order.OrderPrice = 10.0;
             order.OrderQty = 1;
             order.TacticsType = 'N';
             order.TriggerCondition = 'N';
@@ -106,7 +106,8 @@ namespace TapTradeTest
             //order.OrderDeleteByDisConnFlag = 'N';
             string num = "123";
             uint id2 = 0;
-            api.InsertOrder(out id2, num, order);
+            var result = api.InsertOrder(out id2, num, order);
+            Console.WriteLine("InsertOrder result:" + result);
         }
     }
 }
