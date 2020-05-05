@@ -442,7 +442,8 @@ public class ITapTradeAPINotify : global::System.IDisposable {
   }
 
   private void SwigDirectorMethodOnRspQryTradingDate(uint sessionID, int errorCode, global::System.IntPtr info) {
-    OnRspQryTradingDate(sessionID, errorCode, (info == global::System.IntPtr.Zero) ? null : new TapAPITradingCalendarQryRsp(info, false));
+        TapAPITradingCalendarQryRsp data = (info == global::System.IntPtr.Zero) ? null : new TapAPITradingCalendarQryRsp(info, false);
+    OnRspQryTradingDate(sessionID, errorCode, data);
   }
 
   private void SwigDirectorMethodOnRspSetReservedInfo(uint sessionID, int errorCode, string info) {

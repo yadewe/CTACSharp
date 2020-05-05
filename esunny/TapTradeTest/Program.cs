@@ -45,6 +45,7 @@ namespace TapTradeTest
                 Thread.Sleep(1000);
             }
 
+            TestOrderInsert(api, "test");
             //TestOrderInsert(api, userName);
 
             var version = TapTradeCppWrapper.GetITapTradeAPIVersion();
@@ -55,16 +56,20 @@ namespace TapTradeTest
             uint sessionId = 0;
             var result = api.QryTradingDate(out sessionId);
             Console.WriteLine($"QryTradingDate:{result}");
+            //result = api.QryCommodity(out sessionId);
+            //Console.WriteLine($"QryCommodity:{result}");
+            result = api.QryContract(out sessionId, new TapAPICommodity() { ExchangeNo = "HKEX", CommodityNo= "HSI", CommodityType='F' });
+            Console.WriteLine($"QryContract:{result}");
             //result = api.QryExchange(out sessionId);
             //Console.WriteLine($"QryExchange:{result}");
             //result = api.QryCurrency(out sessionId);
             //Console.WriteLine($"QryCurrency:{result}");
 
-            //var accInfo = new TapAPIAccQryReq();
-            ////exInfo.ExchangeName = "";
-            ////exInfo.ExchangeNo = "";
-            // result = api.QryAccount(out sessionId, accInfo);
-            //Console.WriteLine($"QryCurrency:{result},info:{accInfo}");
+            var accInfo = new TapAPIAccQryReq();
+            //exInfo.ExchangeName = "";
+            //exInfo.ExchangeNo = "";
+            result = api.QryAccount(out sessionId, accInfo);
+            Console.WriteLine($"QryAccount:{result},info:{accInfo}");
 
             while (true)
             {
@@ -74,12 +79,14 @@ namespace TapTradeTest
 
         private static void TestOrderInsert(ITapTradeAPI api, string userName)
         {
+            // {"ExchangeNo":"HKEX","CommodityType":"F","CommodityNo":"HSI","CommodityName":"恒生指数期货","CommodityEngName":"Hang Seng Index","RelateExchangeNo":"","RelateCommodityType":"\u0000","RelateCommodityNo":"","RelateExchangeNo2":"","RelateCommodityType2":"\u0000","RelateCommodityNo2":"","CurrencyGroupNo":"OTHER","TradeCurrency":"HKD","ContractSize":50.0,"OpenCloseMode":"N","StrikePriceTimes":0.0,"CommodityTickSize":1.0,"CommodityDenominator":1,"CmbDirect":"\u0000","DeliveryMode":"C","DeliveryDays":0,"AddOneTime":"16:50:00","CommodityTimeZone":8,"IsAddOne":"N"}
+            // {"ExchangeNo":"HKEX","CommodityType":"F","CommodityNo":"HSI","ContractNo1":"2005","StrikePrice1":"","CallOrPutFlag1":"N","ContractNo2":"","StrikePrice2":"","CallOrPutFlag2":"N","ContractType":"1","QuoteUnderlyingContract":"","ContractName":"恒生指数期货 2005","ContractExpDate":"2020-05-28","LastTradeDate":"2020-05-28","FirstNoticeDate":"2020-05-28"}
             var order = new TapAPINewOrder();
             order.AccountNo = userName;
-            order.ExchangeNo = "SHI";
+            order.ExchangeNo = "HKEX";
             order.CommodityType = 'F';
-            order.CommodityNo = "IF";
-            order.ContractNo = "2004";
+            order.CommodityNo = "HSI";
+            order.ContractNo = "2005";
             order.StrikePrice = "1";
             order.CallOrPutFlag = 'N';
             order.ContractNo2 = "";
