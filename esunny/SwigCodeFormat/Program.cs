@@ -33,6 +33,15 @@ namespace SwigCodeFormat
                 text = text.Replace("ref result", "out result");
                 text = text.Replace("ref int iResult", "out int iResult");
                 text = text.Replace("SWIGTYPE_p_unsigned_int.getCPtr(sessionID)", "out sessionID");
+               
+                // 添加命名空间，只有TapQuote添加这个
+                if(text.Contains("public class "))
+                {
+                text =  @"namespace TapQuoteCSharpWrapper
+{
+     " + text + @"
+}";
+                }
                 File.WriteAllText(file, text);
             }
 
