@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace SwigCodeFormat
     {
         static void Main(string[] args)
         {
+            // 文件添加命名空间
+            var ns = ConfigurationManager.AppSettings["FileNamespace"];
             var files = Directory.GetFiles(AppContext.BaseDirectory, "*.cs");
             foreach (var file in files)
             {
@@ -35,12 +38,12 @@ namespace SwigCodeFormat
                 text = text.Replace("SWIGTYPE_p_unsigned_int.getCPtr(sessionID)", "out sessionID");
                
                 // 添加命名空间，只有TapQuote添加这个
-                if(text.Contains("public class "))
+                if(!string.IsNullOrWhiteSpace(ns))
                 {
-                text =  @"namespace TapQuoteCSharpWrapper
-{
-     " + text + @"
-}";
+                text =  $@"namespace {ns}
+{{
+     {text}
+}}";
                 }
                 File.WriteAllText(file, text);
             }
