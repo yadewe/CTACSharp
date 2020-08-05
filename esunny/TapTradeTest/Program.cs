@@ -111,7 +111,7 @@ namespace TapTradeTest
             //order.HedgeFlag2 = 'N';
             //order.MarketLevel = 0;
             //order.OrderDeleteByDisConnFlag = 'N';
-            string num = "123";
+            string num = "123".PadLeft(50,'0');
             uint id2 = 0;
             var result = api.InsertOrder(out id2, num, order);
             Console.WriteLine("InsertOrder result:" + result);

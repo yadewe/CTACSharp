@@ -27,6 +27,12 @@ namespace SwigCodeFormat
                 text = text.Replace("(sessionID == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(sessionID, false)", "out sessionID");
 
                 text = text.Replace("SWIGTYPE_p_int.getCPtr(iResult)", "out iResult");
+                text = text.Replace("ref uint sessionID", "out uint sessionID");
+                text = text.Replace("ref uint jarg2", "out uint jarg2");
+                text = text.Replace("ref int jarg2", "out int jarg2");
+                text = text.Replace("ref result", "out result");
+                text = text.Replace("ref int iResult", "out int iResult");
+                text = text.Replace("SWIGTYPE_p_unsigned_int.getCPtr(sessionID)", "out sessionID");
                 File.WriteAllText(file, text);
             }
 

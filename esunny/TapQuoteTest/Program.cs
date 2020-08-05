@@ -19,7 +19,7 @@ namespace TapQuoteTest
             appInfo.KeyOperationLogPath = "\\log";
 
             int result = 0;
-            var api = TapQuoteCppWrapper.CreateTapQuoteAPI(appInfo, ref result);
+            var api = TapQuoteCppWrapper.CreateTapQuoteAPI(appInfo, out result);
 
             var quote = new TapQuoteAPINotifyImpl();
             api.SetAPINotify(quote);
@@ -42,7 +42,7 @@ namespace TapQuoteTest
 
             foreach (var contract in contracts)
             {
-                api.SubscribeQuote(ref quote.SessionId, contract);
+                api.SubscribeQuote(out quote.SessionId, contract);
             }
 
             while (true)

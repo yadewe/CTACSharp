@@ -57,8 +57,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /E /Y $(SolutionDir)\Debug\TapQuoteCppWrapper.dll .
-xcopy /E /Y $(SolutionDir)\api\lib\win32\TapQuoteAPI.dll .
-</PostBuildEvent>
+    <PostBuildEvent>xcopy /E /Y $(SolutionDir)\x64\Debug\TapQuoteCppWrapper.dll .
+xcopy /E /Y $(SolutionDir)\api\lib\win64\TapQuoteAPI.dll .</PostBuildEvent>
   </PropertyGroup>
 </Project>
